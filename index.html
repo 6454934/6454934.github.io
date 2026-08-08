@@ -12,9 +12,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Playfair+Display:ital,wght@0,400;1,400&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -26,6 +27,7 @@
       color: #4d4029;
       line-height: 1.75;
     }
+
 
     /* HEADER */
 
@@ -52,6 +54,7 @@
       color: #4d4029;
     }
 
+
     /* NAVIGATION */
 
     nav {
@@ -72,6 +75,7 @@
     nav a:hover {
       color: #8a6b2d;
     }
+
 
     /* HERO */
 
@@ -107,8 +111,6 @@
       font-size: 1.1rem;
     }
 
-    /* BUTTON */
-
     .button {
       display: inline-block;
       background: #F3CF80;
@@ -124,12 +126,170 @@
       background: #FFEBA1;
     }
 
+
+    /* WEEKLY BULLETIN */
+
+    .bulletin-section {
+      background: #f3cf80;
+      padding: 80px 20px;
+      border-top: 1px solid #dcb968;
+      border-bottom: 1px solid #dcb968;
+    }
+
+    .bulletin-wrapper {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .bulletin-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .bulletin-heading h2 {
+      font-family: "Gloock", Georgia, serif;
+      font-weight: 400;
+      font-size: 2.6rem;
+      color: #403521;
+      margin: 0 0 5px;
+    }
+
+    .bulletin-heading p {
+      font-family: "Caveat", cursive;
+      font-size: 1.5rem;
+      margin: 0;
+      color: #5c4b2c;
+    }
+
+
+    /* BULLETIN BOARD */
+
+    .bulletin-board {
+      background: #b98c55;
+      padding: 35px;
+      border-radius: 6px;
+      box-shadow: 0 10px 30px rgba(77, 64, 41, 0.18);
+    }
+
+    .board-inner {
+      background: #d4a66a;
+      padding: 30px;
+      min-height: 500px;
+      border-radius: 3px;
+    }
+
+
+    /* BULLETIN CARDS */
+
+    .bulletin-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .note {
+      position: relative;
+      padding: 30px 25px 25px;
+      background: #FFFDE7;
+      box-shadow: 0 6px 12px rgba(77, 64, 41, 0.18);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .note:hover {
+      transform: translateY(-5px) rotate(0deg) !important;
+      box-shadow: 0 10px 20px rgba(77, 64, 41, 0.25);
+    }
+
+    .note:nth-child(1) {
+      transform: rotate(-1.5deg);
+    }
+
+    .note:nth-child(2) {
+      transform: rotate(1.5deg);
+    }
+
+    .note:nth-child(3) {
+      transform: rotate(-1deg);
+    }
+
+    .note:nth-child(4) {
+      transform: rotate(1.2deg);
+    }
+
+    .note h3 {
+      font-family: "Gloock", Georgia, serif;
+      font-weight: 400;
+      font-size: 1.35rem;
+      color: #403521;
+      margin: 0 0 12px;
+    }
+
+    .note p {
+      margin: 0 0 15px;
+      font-size: 0.95rem;
+    }
+
+    .note a {
+      color: #80652d;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    .note a:hover {
+      text-decoration: underline;
+    }
+
+
+    /* PIN */
+
+    .pin {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #80652d;
+      border-radius: 50%;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    }
+
+
+    /* FEATURED BULLETIN */
+
+    .featured-note {
+      grid-column: span 2;
+      background: #ffffff;
+      padding: 35px;
+      text-align: center;
+      transform: rotate(-0.5deg);
+    }
+
+    .featured-note h3 {
+      font-size: 1.7rem;
+    }
+
+    .featured-note p {
+      max-width: 700px;
+      margin: 0 auto 18px;
+    }
+
+
+    /* GOSPEL */
+
+    .gospel-note {
+      background: #FFEBA1;
+    }
+
+
     /* ARTICLES */
 
     .section {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 70px 20px;
+      padding: 80px 20px;
     }
 
     .section h2 {
@@ -192,6 +352,7 @@
       text-decoration: underline;
     }
 
+
     /* ABOUT */
 
     .about {
@@ -216,6 +377,7 @@
       font-size: 1.05rem;
     }
 
+
     /* FOOTER */
 
     footer {
@@ -229,9 +391,10 @@
       margin: 6px 0;
     }
 
+
     /* MOBILE */
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
 
       header {
         padding: 35px 15px 28px;
@@ -269,6 +432,31 @@
         margin: 5px 8px;
       }
 
+      .bulletin-section {
+        padding: 55px 15px;
+      }
+
+      .bulletin-heading h2 {
+        font-size: 2rem;
+      }
+
+      .bulletin-board {
+        padding: 15px;
+      }
+
+      .board-inner {
+        padding: 15px;
+      }
+
+      .bulletin-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .featured-note {
+        grid-column: span 1;
+      }
+
       .section {
         padding: 55px 15px;
       }
@@ -297,6 +485,7 @@
         font-size: 2rem;
       }
     }
+
   </style>
 
 </head>
@@ -365,6 +554,216 @@
 </section>
 
 
+<!-- WEEKLY BULLETIN -->
+
+<section class="bulletin-section">
+
+  <div class="bulletin-wrapper">
+
+    <div class="bulletin-heading">
+
+      <h2>
+        This Week at Honey & Hymns
+      </h2>
+
+      <p>
+        A little bulletin board for the week
+      </p>
+
+    </div>
+
+
+    <div class="bulletin-board">
+
+      <div class="board-inner">
+
+        <div class="bulletin-grid">
+
+
+          <!-- VERSE OF THE WEEK -->
+
+          <div class="note">
+
+            <div class="pin"></div>
+
+            <h3>
+              📖 Verse of the Week
+            </h3>
+
+            <p>
+              “Whatever you do, do from the heart, as for the Lord
+              and not for others.”
+            </p>
+
+            <p>
+              <strong>Colossians 3:23</strong>
+            </p>
+
+            <a href="#">
+              Read the Reflection →
+            </a>
+
+          </div>
+
+
+          <!-- POLL RESULTS -->
+
+          <div class="note">
+
+            <div class="pin"></div>
+
+            <h3>
+              📊 Last Week's Poll
+            </h3>
+
+            <p>
+              What helps make your homeschool day feel peaceful?
+            </p>
+
+            <p>
+              Morning routine — 42%<br>
+              Reading aloud — 28%<br>
+              Nature time — 18%<br>
+              Other — 12%
+            </p>
+
+            <a href="#">
+              See the Results →
+            </a>
+
+          </div>
+
+
+          <!-- LATEST POST -->
+
+          <div class="note featured-note">
+
+            <div class="pin"></div>
+
+            <h3>
+              📰 The Latest from Honey & Hymns
+            </h3>
+
+            <p>
+              <strong>
+                Why I Started My Own Personal Curriculum
+                (And Why My Kids Are Watching)
+              </strong>
+            </p>
+
+            <p>
+              How creating a personal curriculum as a homeschool
+              mom is helping me model lifelong learning, curiosity,
+              and biblical wisdom for my children.
+            </p>
+
+            <a href="#">
+              Read the Latest Post →
+            </a>
+
+          </div>
+
+
+          <!-- NEW -->
+
+          <div class="note">
+
+            <div class="pin"></div>
+
+            <h3>
+              ✨ What's New
+            </h3>
+
+            <p>
+              New articles, homeschool resources, printables,
+              and other little things are always being added
+              around the Honey & Hymns home.
+            </p>
+
+            <a href="#">
+              Explore What's New →
+            </a>
+
+          </div>
+
+
+          <!-- UPCOMING -->
+
+          <div class="note">
+
+            <div class="pin"></div>
+
+            <h3>
+              📅 Coming Up
+            </h3>
+
+            <p>
+              Keep an eye out for upcoming Honey & Hymns articles,
+              resources, the next digital magazine, and more.
+            </p>
+
+            <a href="#">
+              See What's Coming →
+            </a>
+
+          </div>
+
+
+          <!-- GOSPEL -->
+
+          <div class="note gospel-note">
+
+            <div class="pin"></div>
+
+            <h3>
+              ✝️ Sunday Gospel for Kids
+            </h3>
+
+            <p>
+              A simple way for families to read, learn, pray,
+              and reflect on this Sunday's Gospel together.
+            </p>
+
+            <a href="#">
+              Explore This Week's Gospel →
+            </a>
+
+          </div>
+
+
+          <!-- MAGAZINE -->
+
+          <div class="note">
+
+            <div class="pin"></div>
+
+            <h3>
+              🍯 This Month's Magazine
+            </h3>
+
+            <p>
+              The latest Honey & Hymns digital magazine will
+              live here when it's ready.
+            </p>
+
+            <a href="#">
+              Open the Magazine →
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 <!-- ARTICLES -->
 
 <section class="section" id="articles">
@@ -381,7 +780,8 @@
     <article class="card">
 
       <h3>
-        Why I Chose to Homeschool My Kids: The Story Behind Our Homeschool Journey
+        Why I Chose to Homeschool My Kids:
+        The Story Behind Our Homeschool Journey
       </h3>
 
       <img
@@ -408,7 +808,8 @@
     <article class="card">
 
       <h3>
-        Are Girl Toddlers More Strong-Willed Than Boys? A Mom’s Honest Investigation
+        Are Girl Toddlers More Strong-Willed Than Boys?
+        A Mom’s Honest Investigation
       </h3>
 
       <img
@@ -435,7 +836,8 @@
     <article class="card">
 
       <h3>
-        The 10 Living Books I'm Most Excited to Read This Homeschool Year
+        The 10 Living Books I'm Most Excited to Read
+        This Homeschool Year
       </h3>
 
       <img
@@ -487,7 +889,8 @@
     <article class="card">
 
       <h3>
-        How I Prepare for a New Homeschool Year: My End-of-Summer Planning Routine
+        How I Prepare for a New Homeschool Year:
+        My End-of-Summer Planning Routine
       </h3>
 
       <img
@@ -515,7 +918,8 @@
     <article class="card">
 
       <h3>
-        Why I Started My Own Personal Curriculum (And Why My Kids Are Watching)
+        Why I Started My Own Personal Curriculum
+        (And Why My Kids Are Watching)
       </h3>
 
       <img
