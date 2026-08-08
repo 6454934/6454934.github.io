@@ -131,19 +131,19 @@
 
     .bulletin-section {
       background: #f3cf80;
-      padding: 80px 20px;
+      padding: 70px 20px 80px;
       border-top: 1px solid #dcb968;
       border-bottom: 1px solid #dcb968;
     }
 
     .bulletin-wrapper {
-      max-width: 1050px;
+      max-width: 1250px;
       margin: 0 auto;
     }
 
     .bulletin-heading {
       text-align: center;
-      margin-bottom: 45px;
+      margin-bottom: 35px;
     }
 
     .bulletin-heading h2 {
@@ -162,19 +162,18 @@
     }
 
 
-    /* BULLETIN BOARD */
+    /* WIDER, SHORTER BULLETIN BOARD */
 
     .bulletin-board {
       background: #b98c55;
-      padding: 35px;
+      padding: 28px;
       border-radius: 6px;
       box-shadow: 0 10px 30px rgba(77, 64, 41, 0.18);
     }
 
     .board-inner {
       background: #d4a66a;
-      padding: 30px;
-      min-height: 500px;
+      padding: 25px;
       border-radius: 3px;
     }
 
@@ -183,14 +182,14 @@
 
     .bulletin-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
       align-items: start;
     }
 
     .note {
       position: relative;
-      padding: 30px 25px 25px;
+      padding: 28px 22px 22px;
       background: #FFFDE7;
       box-shadow: 0 6px 12px rgba(77, 64, 41, 0.18);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -232,21 +231,23 @@
     .note h3 {
       font-family: "Gloock", Georgia, serif;
       font-weight: 400;
-      font-size: 1.35rem;
+      font-size: 1.25rem;
+      line-height: 1.35;
       color: #403521;
-      margin: 0 0 12px;
+      margin: 0 0 10px;
     }
 
     .note p {
-      margin: 0 0 15px;
-      font-size: 0.95rem;
+      margin: 0 0 13px;
+      font-size: 0.88rem;
+      line-height: 1.6;
     }
 
     .note a {
       color: #80652d;
       text-decoration: none;
       font-weight: bold;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .note a:hover {
@@ -262,7 +263,7 @@
       height: 15px;
       background: #80652d;
       border-radius: 50%;
-      top: 10px;
+      top: 9px;
       left: 50%;
       transform: translateX(-50%);
       box-shadow: 0 2px 3px rgba(0,0,0,0.2);
@@ -274,18 +275,17 @@
     .featured-note {
       grid-column: span 2;
       background: #ffffff;
-      padding: 35px;
+      padding: 30px;
       text-align: center;
-      transform: rotate(-0.5deg);
     }
 
     .featured-note h3 {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
 
     .featured-note p {
-      max-width: 700px;
-      margin: 0 auto 18px;
+      max-width: 600px;
+      margin: 0 auto 15px;
     }
 
 
@@ -376,6 +376,7 @@
       border-bottom: 1px solid #d8c79f;
       display: flex;
       flex-direction: column;
+      height: 100%;
     }
 
     .story-image-wrap {
@@ -417,6 +418,7 @@
       line-height: 1.7;
       color: #66563c;
       margin: 0 0 17px;
+      flex-grow: 1;
     }
 
     .story-link {
@@ -425,6 +427,7 @@
       font-size: 0.85rem;
       font-weight: bold;
       letter-spacing: 0.3px;
+      margin-top: auto;
     }
 
     .story-link:hover {
@@ -473,7 +476,11 @@
 
     /* TABLET */
 
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
+
+      .bulletin-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
       .article-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -532,11 +539,11 @@
       }
 
       .bulletin-board {
-        padding: 15px;
+        padding: 14px;
       }
 
       .board-inner {
-        padding: 15px;
+        padding: 14px;
       }
 
       .bulletin-grid {
@@ -1162,11 +1169,13 @@
 
 </section>
 
+
   </main>
 
   <!-- FOOTER -->
 
   <footer>
+
 
 <p>
   © 2026 Honey & Hymns
@@ -1175,6 +1184,7 @@
 <p>
   Faith • Homeschool • Homemaking
 </p>
+
 
   </footer>
 
