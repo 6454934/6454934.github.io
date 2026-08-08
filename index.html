@@ -28,9 +28,6 @@
       line-height: 1.75;
     }
 
-
-    /* HEADER */
-
     header {
       background: #FFEBA1;
       padding: 45px 20px 35px;
@@ -54,9 +51,6 @@
       color: #4d4029;
     }
 
-
-    /* NAVIGATION */
-
     nav {
       background: #FFFDE7;
       text-align: center;
@@ -75,9 +69,6 @@
     nav a:hover {
       color: #8a6b2d;
     }
-
-
-    /* HERO */
 
     .hero {
       max-width: 1050px;
@@ -126,11 +117,6 @@
       background: #FFEBA1;
     }
 
-
-    /* =========================================
-       WEEKLY BULLETIN
-       ========================================= */
-
     .bulletin-section {
       background: #f3cf80;
       padding: 70px 20px 80px;
@@ -163,10 +149,8 @@
       color: #5c4b2c;
     }
 
-
-    /* WASHED-OUT BULLETIN BOARD */
-
     .bulletin-board {
+      position: relative;
       background: #c4aa7e;
       padding: 28px;
       border-radius: 6px;
@@ -179,8 +163,21 @@
       border-radius: 3px;
     }
 
+    .bulletin-sticker {
+      position: absolute;
+      width: 125px;
+      height: auto;
+      top: -28px;
+      right: 25px;
+      transform: rotate(5deg);
+      z-index: 10;
+      filter: drop-shadow(0 5px 5px rgba(77, 64, 41, 0.18));
+      transition: transform 0.2s ease;
+    }
 
-    /* BULLETIN CARDS */
+    .bulletin-sticker:hover {
+      transform: rotate(2deg) scale(1.04);
+    }
 
     .bulletin-grid {
       display: grid;
@@ -230,9 +227,6 @@
       transform: rotate(1deg);
     }
 
-
-    /* SMALL LIGHT-YELLOW OVAL LABELS */
-
     .bulletin-pill {
       display: inline-block;
       background: #FFEBA1;
@@ -263,9 +257,6 @@
       text-decoration: underline;
     }
 
-
-    /* PIN */
-
     .pin {
       position: absolute;
       width: 13px;
@@ -277,9 +268,6 @@
       transform: translateX(-50%);
       box-shadow: 0 2px 3px rgba(0,0,0,0.12);
     }
-
-
-    /* FEATURED BULLETIN */
 
     .featured-note {
       grid-column: span 2;
@@ -294,17 +282,9 @@
       margin-right: auto;
     }
 
-
-    /* GOSPEL */
-
     .gospel-note {
       background: #fff8d5;
     }
-
-
-    /* =========================================
-       COTTAGE NEWSPAPER ARTICLE SECTION
-       ========================================= */
 
     .articles-section {
       background: #fbf7e9;
@@ -362,9 +342,6 @@
       color: #6b5a3e;
     }
 
-
-    /* THREE-COLUMN ARTICLE GRID */
-
     .article-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -372,9 +349,6 @@
       max-width: 1000px;
       margin: 0 auto;
     }
-
-
-    /* ARTICLE STORY */
 
     .story {
       background: transparent;
@@ -440,9 +414,6 @@
       text-decoration: underline;
     }
 
-
-    /* ABOUT */
-
     .about {
       background: #FFEBA1;
       padding: 75px 20px;
@@ -465,9 +436,6 @@
       font-size: 1.05rem;
     }
 
-
-    /* FOOTER */
-
     footer {
       background: #4d4029;
       color: #FFFDE7;
@@ -478,9 +446,6 @@
     footer p {
       margin: 6px 0;
     }
-
-
-    /* TABLET */
 
     @media (max-width: 1000px) {
 
@@ -494,9 +459,6 @@
       }
 
     }
-
-
-    /* MOBILE */
 
     @media (max-width: 600px) {
 
@@ -550,6 +512,12 @@
 
       .board-inner {
         padding: 14px;
+      }
+
+      .bulletin-sticker {
+        width: 90px;
+        top: -18px;
+        right: 8px;
       }
 
       .bulletin-grid {
@@ -612,10 +580,7 @@
 
 <body>
 
-  <!-- HEADER -->
-
   <header>
-
 
 <img
   src="images/honey-and-hymns-logo.png"
@@ -628,8 +593,6 @@
 
 
   </header>
-
-  <!-- NAVIGATION -->
 
   <nav>
 
@@ -649,8 +612,6 @@
 
   <main>
 
-
-<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -677,8 +638,6 @@
 </section>
 
 
-<!-- WEEKLY BULLETIN -->
-
 <section class="bulletin-section">
 
   <div class="bulletin-wrapper">
@@ -698,12 +657,17 @@
 
     <div class="bulletin-board">
 
+      <img
+        src="images/honey-and-hymns-cross-bees.png"
+        alt="Honey & Hymns cross with honey and bees"
+        class="bulletin-sticker"
+      >
+
+
       <div class="board-inner">
 
         <div class="bulletin-grid">
 
-
-          <!-- VERSE OF THE WEEK -->
 
           <div class="note">
 
@@ -728,8 +692,6 @@
 
           </div>
 
-
-          <!-- POLL RESULTS -->
 
           <div class="note">
 
@@ -756,8 +718,6 @@
 
           </div>
 
-
-          <!-- LATEST POST -->
 
           <div class="note featured-note">
 
@@ -787,8 +747,6 @@
           </div>
 
 
-          <!-- NEW -->
-
           <div class="note">
 
             <div class="pin"></div>
@@ -810,8 +768,6 @@
           </div>
 
 
-          <!-- UPCOMING -->
-
           <div class="note">
 
             <div class="pin"></div>
@@ -832,8 +788,6 @@
           </div>
 
 
-          <!-- GOSPEL -->
-
           <div class="note gospel-note">
 
             <div class="pin"></div>
@@ -853,8 +807,6 @@
 
           </div>
 
-
-          <!-- MAGAZINE -->
 
           <div class="note">
 
@@ -887,8 +839,6 @@
 </section>
 
 
-<!-- COTTAGE NEWSPAPER ARTICLES -->
-
 <section class="articles-section" id="articles">
 
   <div class="articles-wrapper">
@@ -918,8 +868,6 @@
 
     <div class="article-grid">
 
-
-      <!-- ARTICLE 1 -->
 
       <article class="story">
 
@@ -955,8 +903,6 @@
       </article>
 
 
-      <!-- ARTICLE 2 -->
-
       <article class="story">
 
         <div class="story-image-wrap">
@@ -990,8 +936,6 @@
 
       </article>
 
-
-      <!-- ARTICLE 3 -->
 
       <article class="story">
 
@@ -1027,8 +971,6 @@
       </article>
 
 
-      <!-- ARTICLE 4 -->
-
       <article class="story">
 
         <div class="story-image-wrap">
@@ -1059,8 +1001,6 @@
 
       </article>
 
-
-      <!-- ARTICLE 5 -->
 
       <article class="story">
 
@@ -1096,8 +1036,6 @@
 
       </article>
 
-
-      <!-- ARTICLE 6 -->
 
       <article class="story">
 
@@ -1140,8 +1078,6 @@
 </section>
 
 
-<!-- ABOUT -->
-
 <section class="about" id="about">
 
   <div class="about-content">
@@ -1173,13 +1109,9 @@
 
 </section>
 
-
   </main>
 
-  <!-- FOOTER -->
-
   <footer>
-
 
 <p>
   © 2026 Honey & Hymns
