@@ -127,7 +127,7 @@
     /* ARTICLES */
 
     .section {
-      max-width: 1050px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 70px 20px;
     }
@@ -143,7 +143,7 @@
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 25px;
     }
 
@@ -152,25 +152,31 @@
       padding: 30px;
       border: 1px solid #F3CF80;
       border-radius: 4px;
+      display: flex;
+      flex-direction: column;
     }
 
     .card h3 {
       font-family: "Gloock", Georgia, serif;
       font-weight: 400;
-      font-size: 1.35rem;
-      line-height: 1.35;
-      margin-top: 0;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      margin: 0 0 15px;
       color: #403521;
     }
 
-    .card p {
+    .card .subtitle {
       font-size: 0.98rem;
+      line-height: 1.7;
+      margin: 0 0 22px;
+      color: #65543a;
     }
 
     .card a {
       color: #80652d;
       text-decoration: none;
       font-weight: bold;
+      margin-top: auto;
     }
 
     .card a:hover {
@@ -212,10 +218,6 @@
 
     footer p {
       margin: 6px 0;
-    }
-
-    footer a {
-      color: #FFEBA1;
     }
 
     /* MOBILE */
@@ -264,6 +266,14 @@
 
       .section h2 {
         font-size: 2rem;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card h3 {
+        font-size: 1.3rem;
       }
 
       .about {
@@ -353,15 +363,18 @@
   <div class="cards">
 
 
+    <!-- ARTICLE 1 -->
+
     <article class="card">
 
       <h3>
-        Why I Chose to Homeschool My Kids
+        Why I Chose to Homeschool My Kids: The Story Behind Our Homeschool Journey
       </h3>
 
-      <p>
-        The story behind our homeschool journey and the reasons
-        that led our family to choose a different path.
+      <p class="subtitle">
+        A mom’s honest reflection on school safety, family values,
+        and the moment I knew homeschooling was the right choice
+        for our family.
       </p>
 
       <a href="#">
@@ -371,15 +384,18 @@
     </article>
 
 
+    <!-- ARTICLE 2 -->
+
     <article class="card">
 
       <h3>
-        Charlotte Mason vs. Traditional Homeschool
+        Are Girl Toddlers More Strong-Willed Than Boys? A Mom’s Honest Investigation
       </h3>
 
-      <p>
-        Exploring two different approaches to homeschooling and
-        what they can look like in everyday family life.
+      <p class="subtitle">
+        I compared my own parenting experience with what the
+        research says about toddler boys and girls, and the
+        results surprised me.
       </p>
 
       <a href="#">
@@ -389,15 +405,18 @@
     </article>
 
 
+    <!-- ARTICLE 3 -->
+
     <article class="card">
 
       <h3>
-        5 Simple Nature Study Ideas
+        The 10 Living Books I'm Most Excited to Read This Homeschool Year
       </h3>
 
-      <p>
-        Easy ways to bring nature study into your homeschool
-        without making your schedule complicated.
+      <p class="subtitle">
+        After moving from screen-heavy learning to a Charlotte
+        Mason approach, these are the books filling our homeschool
+        with stories, imagination, and faith.
       </p>
 
       <a href="#">
@@ -407,15 +426,16 @@
     </article>
 
 
+    <!-- ARTICLE 4 -->
+
     <article class="card">
 
       <h3>
-        Daily Habits of a Charlotte Mason Homeschool
+        6 Simple Ways I'm Building a God-Centered Marriage
       </h3>
 
-      <p>
-        Simple rhythms and habits that can help create a peaceful
-        and meaningful homeschool day.
+      <p class="subtitle">
+        Honest reflections from a wife still learning as she goes.
       </p>
 
       <a href="#">
@@ -425,15 +445,19 @@
     </article>
 
 
+    <!-- ARTICLE 5 -->
+
     <article class="card">
 
       <h3>
-        Why a Prepared Home Can Be a Peaceful Home
+        How I Prepare for a New Homeschool Year: My End-of-Summer Planning Routine
       </h3>
 
-      <p>
-        Simple ideas for preparing your home and family without
-        living in a constant state of worry.
+      <p class="subtitle">
+        From organizing portfolios and choosing curriculum to
+        planning lessons and preparing our hearts for a
+        Christ-centered homeschool year, here's how our family
+        gets ready for a fresh start.
       </p>
 
       <a href="#">
@@ -443,15 +467,18 @@
     </article>
 
 
+    <!-- ARTICLE 6 -->
+
     <article class="card">
 
       <h3>
-        Encouragement for the Weary Homeschool Mom
+        Why I Started My Own Personal Curriculum (And Why My Kids Are Watching)
       </h3>
 
-      <p>
-        A reminder that the ordinary work of motherhood has
-        value, even on the days when it doesn't feel impressive.
+      <p class="subtitle">
+        How creating a personal curriculum as a homeschool mom
+        is helping me model lifelong learning, curiosity, and
+        biblical wisdom for my children.
       </p>
 
       <a href="#">
