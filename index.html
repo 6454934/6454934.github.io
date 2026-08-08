@@ -127,13 +127,15 @@
     }
 
 
-    /* WEEKLY BULLETIN */
+    /* =========================================
+       WEEKLY BULLETIN
+       ========================================= */
 
     .bulletin-section {
       background: #f3cf80;
       padding: 70px 20px 80px;
-      border-top: 1px solid #dcb968;
-      border-bottom: 1px solid #dcb968;
+      border-top: 1px solid #d9bf86;
+      border-bottom: 1px solid #d9bf86;
     }
 
     .bulletin-wrapper {
@@ -162,17 +164,17 @@
     }
 
 
-    /* WIDER, SHORTER BULLETIN BOARD */
+    /* WASHED-OUT BULLETIN BOARD */
 
     .bulletin-board {
-      background: #b98c55;
+      background: #c4aa7e;
       padding: 28px;
       border-radius: 6px;
-      box-shadow: 0 10px 30px rgba(77, 64, 41, 0.18);
+      box-shadow: 0 8px 22px rgba(77, 64, 41, 0.12);
     }
 
     .board-inner {
-      background: #d4a66a;
+      background: #d8c59e;
       padding: 25px;
       border-radius: 3px;
     }
@@ -189,15 +191,15 @@
 
     .note {
       position: relative;
-      padding: 28px 22px 22px;
-      background: #FFFDE7;
-      box-shadow: 0 6px 12px rgba(77, 64, 41, 0.18);
+      padding: 30px 22px 23px;
+      background: #fffdf0;
+      box-shadow: 0 5px 10px rgba(77, 64, 41, 0.12);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .note:hover {
       transform: translateY(-5px) rotate(0deg) !important;
-      box-shadow: 0 10px 20px rgba(77, 64, 41, 0.25);
+      box-shadow: 0 9px 16px rgba(77, 64, 41, 0.18);
     }
 
     .note:nth-child(1) {
@@ -228,13 +230,20 @@
       transform: rotate(1deg);
     }
 
-    .note h3 {
+
+    /* SMALL LIGHT-YELLOW OVAL LABELS */
+
+    .bulletin-pill {
+      display: inline-block;
+      background: #FFEBA1;
+      color: #4d4029;
+      padding: 5px 14px 6px;
+      border-radius: 50px;
       font-family: "Gloock", Georgia, serif;
-      font-weight: 400;
-      font-size: 1.25rem;
-      line-height: 1.35;
-      color: #403521;
-      margin: 0 0 10px;
+      font-size: 0.92rem;
+      line-height: 1.2;
+      margin-bottom: 14px;
+      box-shadow: 0 1px 2px rgba(77, 64, 41, 0.08);
     }
 
     .note p {
@@ -259,14 +268,14 @@
 
     .pin {
       position: absolute;
-      width: 15px;
-      height: 15px;
-      background: #80652d;
+      width: 13px;
+      height: 13px;
+      background: #b79b6e;
       border-radius: 50%;
       top: 9px;
       left: 50%;
       transform: translateX(-50%);
-      box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 3px rgba(0,0,0,0.12);
     }
 
 
@@ -274,25 +283,22 @@
 
     .featured-note {
       grid-column: span 2;
-      background: #ffffff;
+      background: #fffef5;
       padding: 30px;
       text-align: center;
     }
 
-    .featured-note h3 {
-      font-size: 1.5rem;
-    }
-
     .featured-note p {
       max-width: 600px;
-      margin: 0 auto 15px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
 
     /* GOSPEL */
 
     .gospel-note {
-      background: #FFEBA1;
+      background: #fff8d5;
     }
 
 
@@ -641,8 +647,6 @@
 
   </nav>
 
-  <!-- MAIN CONTENT -->
-
   <main>
 
 
@@ -705,9 +709,9 @@
 
             <div class="pin"></div>
 
-            <h3>
-              📖 Verse of the Week
-            </h3>
+            <span class="bulletin-pill">
+              Verse of the Week
+            </span>
 
             <p>
               “Whatever you do, do from the heart, as for the Lord
@@ -731,9 +735,9 @@
 
             <div class="pin"></div>
 
-            <h3>
-              📊 Last Week's Poll
-            </h3>
+            <span class="bulletin-pill">
+              Last Week's Poll
+            </span>
 
             <p>
               What helps make your homeschool day feel peaceful?
@@ -759,9 +763,9 @@
 
             <div class="pin"></div>
 
-            <h3>
-              📰 The Latest from Honey & Hymns
-            </h3>
+            <span class="bulletin-pill">
+              The Latest from Honey & Hymns
+            </span>
 
             <p>
               <strong>
@@ -789,9 +793,9 @@
 
             <div class="pin"></div>
 
-            <h3>
-              ✨ What's New
-            </h3>
+            <span class="bulletin-pill">
+              What's New
+            </span>
 
             <p>
               New articles, homeschool resources, printables,
@@ -812,9 +816,9 @@
 
             <div class="pin"></div>
 
-            <h3>
-              📅 Coming Up
-            </h3>
+            <span class="bulletin-pill">
+              Coming Up
+            </span>
 
             <p>
               Keep an eye out for upcoming Honey & Hymns articles,
@@ -834,9 +838,9 @@
 
             <div class="pin"></div>
 
-            <h3>
-              ✝️ Sunday Gospel for Kids
-            </h3>
+            <span class="bulletin-pill">
+              Sunday Gospel for Kids
+            </span>
 
             <p>
               A simple way for families to read, learn, pray,
@@ -856,9 +860,9 @@
 
             <div class="pin"></div>
 
-            <h3>
-              🍯 This Month's Magazine
-            </h3>
+            <span class="bulletin-pill">
+              This Month's Magazine
+            </span>
 
             <p>
               The latest Honey & Hymns digital magazine will
