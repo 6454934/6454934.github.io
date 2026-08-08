@@ -328,9 +328,11 @@
 
     .poll-bar {
       height: 100%;
+      width: 0%;
       background: #FFEBA1;
       border-radius: 20px;
       box-shadow: inset 0 -1px 1px rgba(77, 64, 41, 0.08);
+      transition: width 1.2s ease-out;
     }
 
     .poll-zero {
@@ -682,7 +684,7 @@
   </nav>
 
   <main>
-    
+
 
 <section class="hero" id="home">
 
@@ -781,7 +783,10 @@
                 </div>
 
                 <div class="poll-bar-track">
-                  <div class="poll-bar" style="width: 33%;"></div>
+                  <div
+                    class="poll-bar"
+                    data-width="33%"
+                  ></div>
                 </div>
               </div>
 
@@ -805,7 +810,10 @@
                 </div>
 
                 <div class="poll-bar-track">
-                  <div class="poll-bar" style="width: 33%;"></div>
+                  <div
+                    class="poll-bar"
+                    data-width="33%"
+                  ></div>
                 </div>
               </div>
 
@@ -829,7 +837,10 @@
                 </div>
 
                 <div class="poll-bar-track">
-                  <div class="poll-bar" style="width: 33%;"></div>
+                  <div
+                    class="poll-bar"
+                    data-width="33%"
+                  ></div>
                 </div>
               </div>
 
@@ -1268,6 +1279,53 @@
 
 
   </footer>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const pollChart = document.querySelector(".poll-chart");
+
+      const pollBars = document.querySelectorAll(".poll-bar[data-width]");
+
+      if (!pollChart || !pollBars.length) {
+        return;
+      }
+
+      const pollObserver = new IntersectionObserver(
+        function (entries, observer) {
+
+          entries.forEach(function (entry) {
+
+            if (entry.isIntersecting) {
+
+              pollBars.forEach(function (bar, index) {
+
+                const targetWidth = bar.getAttribute("data-width");
+
+                setTimeout(function () {
+                  bar.style.width = targetWidth;
+                }, index * 180);
+
+              });
+
+              observer.disconnect();
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.35
+        }
+      );
+
+      pollObserver.observe(pollChart);
+
+    });
+
+  </script>
 
 </body>
 </html>
